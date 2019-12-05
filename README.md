@@ -5,7 +5,7 @@ If you server not configured for redirect from urls with slash to url without it
 
 - Put the file ```UrlWithoutSlash.php``` to ```app\Http\Middleware``` dirrectory.
 - Edit file ```app\Http\Kernel.php```
-- Write ```\App\Http\Middleware\UrlWithoutSlash::class,```. It should be looks like this:
+- Write ```\App\Http\Middleware\UrlWithoutSlash::class,```. It should looks like this:
 ```php
 protected $middleware = [
         \App\Http\Middleware\CheckForMaintenanceMode::class,
@@ -22,4 +22,4 @@ protected $middleware = [
 or
 ```https://your-site.com/uri/?parametr=something```
 
-It should be redirected to ```https://your-site.com/uri``` and ```https://your-site.com/uri?parametr=something``` respectively.
+They should be redirected to ```https://your-site.com/uri``` and ```https://your-site.com/uri?parametr=something``` respectively.
