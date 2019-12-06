@@ -17,8 +17,7 @@ class UrlWithoutSlash
     public function handle($request, Closure $next)
     {
 
-        if(mb_substr($request->getPathInfo(),-1)=='/'){
-            $uri = $request->getRequestUri();
+        if(mb_substr($request->getPathInfo(),-1)=='/' && ($uri = $request->getRequestUri())!='/'){
             if(mb_substr($uri,0,mb_stripos($uri,'?')) != ''){
                 $new_uri = mb_substr($uri,0,mb_stripos($uri,'?')-1).mb_substr($uri,mb_stripos($uri,'?'));
             }else{
