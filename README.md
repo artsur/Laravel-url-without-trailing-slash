@@ -1,5 +1,5 @@
 # Redirect in Laravel to URL without slash
-If you server not configured for redirect from urls with slash to url without it, you can use this method in Laravel
+If your server not configured for redirect from urls with slash to url without it, you can use this method in Laravel
 
 ## Installation
 
